@@ -3,12 +3,10 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "siteName": {
-            "type": "string",
-            "value": "sitekit-test"
+            "type": "string"
         },
         "hostingPlanName": {
             "type": "string",
-            "value": "myHostingPlan",
             "metadata": {
                 "description": "The name of the App Service plan to use for hosting the web app."
             }
@@ -30,7 +28,6 @@
                 "P4"
             ],
             "defaultValue": "S1",
-            "value": "S1",
             "metadata": {
                 "description": "The pricing tier for the hosting plan."
             }
@@ -43,21 +40,19 @@
                 "2"
             ],
             "defaultValue": "0",
-            "value": "0",
             "metadata": {
                 "description": "The instance size of the hosting plan (small, medium, or large)."
             }
         },
         "repoURL": {
             "type": "string",
-            "value": "https://github.com/pauby/azure-webapp.git",
             "metadata": {
                 "description": "The URL for the GitHub repository that contains the project to deploy."
             }
         },
         "branch": {
             "type": "string",
-            "value": "master",
+            "defaultValue": "master",
             "metadata": {
                 "description": "The branch of the GitHub repository to use."
             }
