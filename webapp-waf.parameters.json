@@ -3,7 +3,7 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "siteName": {
-            "value": "sitekit1"
+            "value": "sitekit"
         },
         "capacity": {
             "value": 1
