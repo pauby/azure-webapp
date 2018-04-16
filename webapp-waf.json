@@ -177,19 +177,7 @@
             "properties": {
                 "serverFarmId": "[parameters('hostingPlanName')]"
             },
-            "resources": [{
-                "apiVersion": "2015-08-01",
-                "name": "web",
-                "type": "sourcecontrols",
-                "dependsOn": [
-                    "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
-                ],
-                "properties": {
-                    "RepoUrl": "[parameters('repoURL')]",
-                    "branch": "[parameters('branch')]",
-                    "IsManualIntegration": false
-                }
-            }]
+            "resources": []
         },
         {
             "apiVersion": "2017-03-01",
