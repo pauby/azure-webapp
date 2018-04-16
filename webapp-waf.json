@@ -189,20 +189,6 @@
                     "branch": "[parameters('branch')]",
                     "IsManualIntegration": false
                 }
-            },
-            {
-                "apiVersion": "2015-08-01",
-                "name": "[parameters('stagingSlotName')]",
-                "type": "slots",
-                "tags": {
-                    "displayName": "webAppSlots"
-                },
-                "location": "[resourceGroup().location]",
-                "dependsOn": [
-                    "[resourceId('Microsoft.Web/Sites', parameters('siteName'))]"
-                ],
-                "properties": {},
-                "resources": []
             }]
         },
         {
